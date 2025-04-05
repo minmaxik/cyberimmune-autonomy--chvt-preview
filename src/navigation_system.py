@@ -36,7 +36,7 @@ class BaseNavigationSystem(Process):
         self._control_q = Queue()
 
         # инициализируем интервал обновления
-        self._recalc_interval_sec = 0.5
+        self._recalc_interval_sec = 0.1 # 0.5
 
         self.log_level = log_level
         self._position = None

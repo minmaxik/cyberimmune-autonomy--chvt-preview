@@ -31,7 +31,7 @@ class Servos(Process):
             queue=self._events_q, name=self._events_q_name)
 
         # инициализируем интервал обновления
-        self._recalc_interval_sec = 0.5
+        self._recalc_interval_sec = 0.1 # 0.5
 
         self._quit = False
         # очередь управляющих команд (например, для остановки работы модуля)

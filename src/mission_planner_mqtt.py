@@ -44,7 +44,7 @@ class MissionSender(Process):
         self._published = False
 
         # инициализируем интервал обновления
-        self._recalc_interval_sec = 0.5
+        self._recalc_interval_sec = 0.1 # 0.5
         self.log_level = log_level
 
     def _log_message(self, criticality: int, message: str):
